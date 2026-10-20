@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse sample local produce listings on the Salone Harvest marketplace."
+    />
+    <title>Marketplace | Salone Harvest</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Salone Harvest home"
+          ><span class="brand-mark">SH</span
+          ><span
+            >Salone<span class="brand-accent">Harvest</span
+            ><small>Grown in Sierra Leone</small></span
+          ></a
+        ><button
+          class="menu-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav
+          class="site-nav"
+          id="primary-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="services.html">Services</a
+          ><a class="active" href="marketplace.html">Marketplace</a
+          ><a class="nav-cta" href="contact.html">Contact us</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="page-hero marketplace-hero">
+        <div class="container">
+          <p class="eyebrow">The marketplace</p>
+          <h1>Explore what Salone grows.</h1>
+          <p>
+            Browse sample produce listings inspired by Sierra Leone's
+            agricultural communities. Prices and seller details are illustrative
+            placeholders for this coursework prototype.
+          </p>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="market-tools">
+          <div>
+            <label for="product-search">Search produce</label
+            ><input
+              id="product-search"
+              type="search"
+              placeholder="Try rice, cassava, pepper..."
+              autocomplete="off"
+            />
+          </div>
+          <div>
+            <label for="category-filter">Filter by category</label
+            ><select id="category-filter">
+              <option value="all">All categories</option>
+              <option value="grain">Grains</option>
+              <option value="root">Root crops</option>
+              <option value="vegetable">Vegetables</option>
+              <option value="fruit">Fruit</option>
+            </select>
+          </div>
+          <p id="results-count" class="results-count" aria-live="polite">
+            Showing 6 sample listings
+          </p>
+        </div>
+        <div class="market-grid" id="market-grid">
+          <article
+            class="market-card"
+            data-name="local rice"
+            data-category="grain"
+          >
+            <div class="market-art art-rice"><span>🌾</span></div>
+            <div class="market-card-body">
+              <span class="product-tag">Grains</span>
+              <h2>Local rice</h2>
+              <p class="seller-location">Sample listing · Bo District</p>
+              <p>Locally grown rice for household or food-service use.</p>
+              <div class="market-card-bottom">
+                <span class="price">Price on enquiry</span
+                ><a href="contact.html" aria-label="Enquire about local rice"
+                  >Enquire →</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="market-card" data-name="cassava" data-category="root">
+            <div class="market-art art-cassava"><span>🌱</span></div>
+            <div class="market-card-body">
+              <span class="product-tag">Root crops</span>
+              <h2>Cassava</h2>
+              <p class="seller-location">Sample listing · Kenema District</p>
+              <p>Fresh cassava roots suitable for a range of local dishes.</p>
+              <div class="market-card-bottom">
+                <span class="price">Price on enquiry</span
+                ><a href="contact.html" aria-label="Enquire about cassava"
+                  >Enquire →</a
+                >
+              </div>
+            </div>
+          </article>
+          <article
+            class="market-card"
+            data-name="fresh pepper"
+            data-category="vegetable"
+          >
+            <div class="market-art art-pepper"><span>🌶️</span></div>
+            <div class="market-card-body">
+              <span class="product-tag">Vegetables</span>
+              <h2>Fresh pepper</h2>
+              <p class="seller-location">Sample listing · Western Area</p>
+              <p>Fresh pepper for home cooking, restaurants and traders.</p>
+              <div class="market-card-bottom">
+                <span class="price">Price on enquiry</span
+                ><a href="contact.html" aria-label="Enquire about fresh pepper"
+                  >Enquire →</a
+                >
+              </div>
+            </div>
+          </article>
+          <article
+            class="market-card"
+            data-name="sweet potato"
+            data-category="root"
+          >
+            <div class="market-art art-potato"><span>🍠</span></div>
+            <div class="market-card-body">
+              <span class="product-tag">Root crops</span>
+              <h2>Sweet potato</h2>
+              <p class="seller-location">Sample listing · Tonkolili District</p>
+              <p>A familiar crop for meals, snacks and market stalls.</p>
+              <div class="market-card-bottom">
+                <span class="price">Price on enquiry</span
+                ><a href="contact.html" aria-label="Enquire about sweet potato"
+                  >Enquire →</a
+                >
+              </div>
+            </div>
+          </article>
+          <article
+            class="market-card"
+            data-name="plantain"
+            data-category="fruit"
+          >
+            <div class="market-art art-plantain"><span>🍌</span></div>
+            <div class="market-card-body">
+              <span class="product-tag">Fruit</span>
+              <h2>Plantain</h2>
+              <p class="seller-location">Sample listing · Port Loko District</p>
+              <p>Plantain for boiling, roasting or preparing local dishes.</p>
+              <div class="market-card-bottom">
+                <span class="price">Price on enquiry</span
+                ><a href="contact.html" aria-label="Enquire about plantain"
+                  >Enquire →</a
+                >
+              </div>
+            </div>
+          </article>
+          <article
+            class="market-card"
+            data-name="okra"
+            data-category="vegetable"
+          >
+            <div class="market-art art-okra"><span>🥬</span></div>
+            <div class="market-card-body">
+              <span class="product-tag">Vegetables</span>
+              <h2>Okra</h2>
+              <p class="seller-location">Sample listing · Moyamba District</p>
+              <p>Fresh okra for soups, stews and everyday cooking.</p>
+              <div class="market-card-bottom">
+                <span class="price">Price on enquiry</span
+                ><a href="contact.html" aria-label="Enquire about okra"
+                  >Enquire →</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+        <p id="no-results" class="no-results" hidden>
+          No sample listings match your search. Try another product or category.
+        </p>
+        <p class="notice">
+          Important: These are demonstration listings, not verified offers.
+          Confirm product quality, availability, price, seller identity and
+          delivery arrangements independently.
+        </p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a class="brand brand-footer" href="index.html"
+            ><span class="brand-mark">SH</span
+            ><span
+              >Salone<span class="brand-accent">Harvest</span
+              ><small>Grown in Sierra Leone</small></span
+            ></a
+          >
+          <p>
+            Connecting Sierra Leone's agricultural community, one harvest at a
+            time.
+          </p>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <a href="about.html">About us</a><a href="services.html">Services</a
+          ><a href="marketplace.html">Marketplace</a>
+        </div>
+        <div>
+          <h2>Get in touch</h2>
+          <a href="contact.html">Contact form</a>
+          <p class="footer-note">Student project concept · Sierra Leone</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span class="current-year">2026</span> Salone Harvest</span
+        ><span>Designed for local connections.</span>
+      </div>
+    </footer>
+  </body>
+</html>

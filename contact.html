@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact the Salone Harvest student project team."
+    />
+    <title>Contact | Salone Harvest</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Salone Harvest home"
+          ><span class="brand-mark">SH</span
+          ><span
+            >Salone<span class="brand-accent">Harvest</span
+            ><small>Grown in Sierra Leone</small></span
+          ></a
+        ><button
+          class="menu-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav
+          class="site-nav"
+          id="primary-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="services.html">Services</a
+          ><a href="marketplace.html">Marketplace</a
+          ><a class="nav-cta active" href="contact.html">Contact us</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Let's connect</p>
+          <h1>Have a question? Let's talk.</h1>
+          <p>
+            Send feedback about the project or share an idea for connecting
+            farmers and buyers in Sierra Leone.
+          </p>
+        </div>
+      </section>
+      <section class="section container contact-grid">
+        <aside class="contact-panel">
+          <p class="eyebrow">Contact information</p>
+          <h2>We'd like to hear from you.</h2>
+          <p>
+            This is a coursework prototype. The form demonstrates front-end
+            validation and does not send data to a server.
+          </p>
+          <div class="contact-detail">
+            <span>✉</span>
+            <div>
+              <strong>Project enquiries</strong>
+              <p>Use the message form on this page.</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span>📍</span>
+            <div>
+              <strong>Project focus</strong>
+              <p>Sierra Leone, with local examples.</p>
+            </div>
+          </div>
+          <div class="contact-note">
+            Please do not submit private, financial or sensitive personal
+            information.
+          </div>
+        </aside>
+        <form class="contact-form" id="contact-form">
+          <h2>Send a message</h2>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="full-name">Full name</label
+              ><input
+                id="full-name"
+                name="fullName"
+                type="text"
+                autocomplete="name"
+                required
+                minlength="2"
+                placeholder="Your name"
+              />
+            </div>
+            <div class="form-field">
+              <label for="email">Email address</label
+              ><input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                placeholder="you@example.com"
+              />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="role">I am a...</label
+            ><select id="role" name="role" required>
+              <option value>Choose one</option>
+              <option>Farmer or grower</option>
+              <option>Buyer or household</option>
+              <option>Shop or restaurant</option>
+              <option>Student or other</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="subject">Subject</label
+            ><input
+              id="subject"
+              name="subject"
+              type="text"
+              required
+              placeholder="What is your message about?"
+            />
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label
+            ><textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              minlength="10"
+              placeholder="Write your message here..."
+            ></textarea>
+          </div>
+          <button class="button button-primary" type="submit">
+            Check message <span aria-hidden="true">→</span>
+          </button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+          <small class="form-disclaimer"
+            >Demo only: clicking the button will not send or store your
+            message.</small
+          >
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a class="brand brand-footer" href="index.html"
+            ><span class="brand-mark">SH</span
+            ><span
+              >Salone<span class="brand-accent">Harvest</span
+              ><small>Grown in Sierra Leone</small></span
+            ></a
+          >
+          <p>
+            Connecting Sierra Leone's agricultural community, one harvest at a
+            time.
+          </p>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <a href="about.html">About us</a><a href="services.html">Services</a
+          ><a href="marketplace.html">Marketplace</a>
+        </div>
+        <div>
+          <h2>Get in touch</h2>
+          <a href="contact.html">Contact form</a>
+          <p class="footer-note">Student project concept · Sierra Leone</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span class="current-year">2026</span> Salone Harvest</span
+        ><span>Designed for local connections.</span>
+      </div>
+    </footer>
+  </body>
+</html>
